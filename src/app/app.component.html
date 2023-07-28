@@ -1,5 +1,6 @@
 <h1>Test Background Service</h1>
-<h3>{{ res | json }}</h3>
-<img [src]="'data:image/jpeg;base64,' + res.FpImage" alt="Image">
+<h3>{{ res.message }}</h3>
+<p>{{ res.FpImage }}</p>
+<img [src]="'data:image/jpeg;base64,' + res.FpImage" alt="Image" />
 
-<button (click)="CheckConnection()">ReadFp</button>
+<button (click)="requestSentFunc()">ReadFp</button>
